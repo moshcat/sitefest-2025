@@ -58,7 +58,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 <template>
   <header class="sticky">
-    <nav class="flex justify-between items-center p-4 px-12 shadow-md">
+    <nav class="flex justify-between items-center p-4 px-12 2xl:container">
       <div class="flex items-center space-x-2">
         <img src="../../assets/logo.svg" class="h-7" alt="logo-sitefest" />
       </div>
