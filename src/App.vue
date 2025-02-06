@@ -3,6 +3,7 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterView />
+  <div class="font-figtree">
+    <RouterView />
+  </div>
 </template>
-
