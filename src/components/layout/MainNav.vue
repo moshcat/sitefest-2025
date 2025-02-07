@@ -3,75 +3,131 @@ import Button from '@/components/ui/button/Button.vue'
 import {
   NavigationMenu,
   NavigationMenuContent,
-  NavigationMenuIndicator,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  NavigationMenuViewport,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
+import { ref } from 'vue'
+import { X, ChevronsUpDown } from 'lucide-vue-next'
 
-const components: { title: string; href: string; description: string }[] = [
+const isOpen = ref(false)
+
+const mainLink = {
+  beranda: {
+    title: 'Beranda',
+    path: '/',
+  },
+  tentang: {
+    title: 'Tentang',
+    path: '#tentang',
+  },
+  kompetisi: {
+    title: 'Kompetisi',
+    path: '',
+  },
+  timeline: {
+    title: 'Timeline',
+    path: '#timeline',
+  },
+  faq: {
+    title: 'FAQ',
+    path: '#faq',
+  },
+}
+const components: { title: string; path: string; description: string }[] = [
   {
     title: 'Web Desain Mahasiswa',
-    href: '/docs/components/alert-dialog',
+    path: '/docs/components/alert-dialog',
     description:
       'A modal dialog that interrupts the user with important content and expects a response.',
   },
   {
     title: 'UI/UX Desain Mahasiswa',
-    href: '/docs/components/hover-card',
+    path: '/docs/components/hover-card',
     description: 'For sighted users to preview content available behind a link.',
   },
   {
     title: 'Ide Bisnis',
-    href: '/docs/components/progress',
+    path: '/docs/components/progress',
     description:
       'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
   },
   {
     title: 'UI Desain SMA/SMK',
-    href: '/docs/components/scroll-area',
+    path: '/docs/components/scroll-area',
     description: 'Visually or semantically separates content.',
   },
   {
     title: 'Cerdas Cermat IT',
-    href: '/docs/components/tooltip',
+    path: '/docs/components/tooltip',
     description:
       'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Cerdas Cermat Akutansi',
-    href: '/docs/components/tooltip',
+    path: '/docs/components/tooltip',
     description:
       'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
   },
   {
     title: 'Poster SMA/SMK',
-    href: '/docs/components/tabs',
+    path: '/docs/components/tabs',
     description:
       'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
   },
 ]
+
+// mobile menu trigger
+const isMobileOpen = ref(null)
+const toggleMobileMenu = () => {
+  isMobileOpen.value = !isMobileOpen.value
+  console.log(isMobileOpen.value)
+}
 </script>
 
 <template>
-  <header class="sticky">
+  <header
+    class="sticky top-0 z-50 bg-white bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50"
+  >
     <nav class="flex justify-between items-center p-4 px-12 2xl:container">
-      <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-2" v-if="!isMobileOpen">
         <img src="../../assets/logo.svg" class="h-7" alt="logo-sitefest" />
       </div>
-      <div>
+
+      <!--      mobile button-->
+      <Button class="md:hidden" variant="default" @click="toggleMobileMenu" v-show="!isMobileOpen">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </Button>
+
+      <!--      desktop menu -->
+      <div class="hidden md:block">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink :class="navigationMenuTriggerStyle()">
-                Beranda
+                <RouterLink :to="mainLink.beranda.path"> {{ mainLink.beranda.title }}</RouterLink>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink :class="navigationMenuTriggerStyle()">Tentang</NavigationMenuLink>
+              <NavigationMenuLink :class="navigationMenuTriggerStyle()">
+                <RouterLink :to="mainLink.tentang.path"> {{ mainLink.tentang.title }}</RouterLink>
+              </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Kompetisi</NavigationMenuTrigger>
@@ -80,7 +136,7 @@ const components: { title: string; href: string; description: string }[] = [
                   <li v-for="component in components" :key="component.title">
                     <NavigationMenuLink as-child>
                       <a
-                        :href="component.href"
+                        :path="component.path"
                         class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
                         <div class="text-sm font-medium leading-none">{{ component.title }}</div>
@@ -95,20 +151,83 @@ const components: { title: string; href: string; description: string }[] = [
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink :class="navigationMenuTriggerStyle()">
-                Timeline
+                <RouterLink :to="mainLink.timeline.path"> {{ mainLink.timeline.title }}</RouterLink>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink :class="navigationMenuTriggerStyle()">FAQ</NavigationMenuLink>
+              <NavigationMenuLink :class="navigationMenuTriggerStyle()">
+                <RouterLink :to="mainLink.faq.path"> {{ mainLink.faq.title }}</RouterLink>
+              </NavigationMenuLink>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </div>
-      <div class="flex items-center space-x-4">
+
+      <div class="flex items-center space-x-4 hidden md:block">
         <Button :variant="'default'" :size="'lg'">Kontak</Button>
+      </div>
+
+      <!--      mobile menu -->
+      <div
+        class="md:hidden overflow-y-auto h-[calc(100vh-60px)] w-full no-scrollbar"
+        v-if="isMobileOpen"
+      >
+        <div class="flex mb-8 justify-between items-center">
+          <div class="space-x-2">
+            <img src="../../assets/logo.svg" class="h-7" alt="logo-sitefest" />
+          </div>
+          <div class="">
+            <Button class="md:hidden" variant="default" @click="toggleMobileMenu">
+              <X />
+            </Button>
+          </div>
+        </div>
+        <div
+          class="px-2 pt-2 pb-3 space-y-1 sm:px-3"
+          v-for="[key, item] in Object.entries(mainLink).filter(([key]) => key !== 'kompetisi')"
+          :key="key"
+        >
+          <RouterLink
+            :to="item.path"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            {{ item.title }}
+          </RouterLink>
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Collapsible v-model:open="isOpen" class="w-full space-y-2">
+            <div class="flex items-center justify-between">
+              <CollapsibleTrigger
+                class="block text-start w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900"
+                @click="isOpen === true"
+              >
+                {{ mainLink.kompetisi.title }}
+              </CollapsibleTrigger>
+              <CollapsibleTrigger as-child>
+                <Button variant="ghost" size="sm" class="w-9 p-0">
+                  <ChevronsUpDown class="h-4 w-4" />
+                  <span class="sr-only">Toggle</span>
+                </Button>
+              </CollapsibleTrigger>
+            </div>
+            <CollapsibleContent
+              class="space-y-2"
+              v-for="component in components"
+              :key="component.title"
+            >
+              <RouterLink
+                :to="component.path"
+                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              >
+                {{ component.title }}
+              </RouterLink>
+            </CollapsibleContent>
+          </Collapsible>
+        </div>
+        <div class="pt-4 pb-3 border-t border-gray-200">
+          <Button :variant="'default'" :size="'lg'" class="w-full">Kontak</Button>
+        </div>
       </div>
     </nav>
   </header>
 </template>
-
-<style scoped></style>
