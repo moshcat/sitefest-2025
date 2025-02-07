@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Button from '@/components/ui/button/Button.vue'
+
 const content = {
   subtitle: 'Tentang',
   title: 'Apa itu Sitefest?',
@@ -25,6 +27,8 @@ const content = {
         <p class="leading-7 [&:not(:first-child)]:mt-6">
           {{ content.description }}
         </p>
+
+        <Button variant="default" class="my-6" size="lg">Daftar Sekarang</Button>
       </div>
       <!--      kanan image-->
       <div class="rounded-lg p-6 flex justify-center items-center">
