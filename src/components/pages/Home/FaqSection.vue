@@ -71,7 +71,7 @@ const accordionItems = [
 </script>
 
 <template>
-  <section class="container mx-auto flex justify-center items-center flex-col">
+  <section class="container mx-auto flex justify-center items-center flex-col mt-16">
     <h2
       class="mt-10 text-secondary scroll-m-20 border-b pb-2 text-sm lg:text-xl font-semibold tracking-tight transition-colors first:mt-0"
     >
@@ -81,7 +81,7 @@ const accordionItems = [
       Pertanyaan yang Sering Diajukan
     </h1>
 
-    <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
+    <Accordion type="single" class="w-full mb-32" collapsible :default-value="defaultValue">
       <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
         <AccordionTrigger class="scroll-m-20 lg:text-xl tracking-tight text-sm md:text-lg">
           {{ item.title }}
