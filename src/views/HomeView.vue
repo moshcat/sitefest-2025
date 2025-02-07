@@ -2,6 +2,7 @@
 import { defineAsyncComponent } from 'vue'
 import Hero from '@/components/pages/Home/Hero.vue'
 import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
+import Tentang from '@/components/pages/Home/Tentang.vue'
 
 const HeroVideo = defineAsyncComponent({
   loader: () => import('@/components/pages/Home/HeroVideo.vue'),
@@ -26,5 +27,8 @@ const HeroVideo = defineAsyncComponent({
       </template>
     </Suspense>
     <!--    end video section -->
+
+    <!--    tentang section -->
+    <Tentang />
   </main>
 </template>
