@@ -3,13 +3,16 @@ import { defineAsyncComponent } from 'vue'
 import Hero from '@/components/pages/Home/Hero.vue'
 import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
 import Tentang from '@/components/pages/Home/Tentang.vue'
-import FaqSection from '@/components/pages/Home/FaqSection.vue'
 
 const HeroVideo = defineAsyncComponent({
   loader: () => import('@/components/pages/Home/HeroVideo.vue'),
   delay: 1000,
   timeout: 3000,
   suspensible: true,
+})
+const FaqSection = defineAsyncComponent({
+  loader: () => import('@/components/pages/Home/FaqSection.vue'),
+  delay: 1000,
 })
 </script>
 
@@ -34,7 +37,14 @@ const HeroVideo = defineAsyncComponent({
     <!--    end tentang section -->
 
     <!--    faq section -->
-    <FaqSection />
+    <Suspense>
+      <template #default>
+        <FaqSection />
+      </template>
+      <template #fallback>
+        <h1>loading...</h1>
+      </template>
+    </Suspense>
     <!--    end faq section -->
   </main>
 </template>
