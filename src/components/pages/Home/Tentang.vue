@@ -16,11 +16,11 @@ const content = {
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 items-center">
       <!--      kiri text -->
       <div class="pb-36 rounded-lg p-6 flex flex-col justify-center items-start gap-4">
-        <h1
-          class="scroll-m-20 text-md text-secondary font-semibold tracking-tight text-md lg:text-xl"
+        <h2
+          class="mt-10 scroll-m-20 border-b pb-2 sm:text-base md:text-md lg:text-xl font-semibold tracking-tight transition-colors first:mt-0 gradient-text"
         >
           {{ content.subtitle }}
-        </h1>
+        </h2>
         <h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           {{ content.title }}
         </h1>
