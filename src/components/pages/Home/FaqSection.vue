@@ -73,7 +73,7 @@ const accordionItems = [
 <template>
   <section class="container mx-auto flex justify-center items-center flex-col mt-16">
     <h2
-      class="mt-10 text-secondary scroll-m-20 border-b pb-2 text-sm lg:text-xl font-semibold tracking-tight transition-colors first:mt-0"
+      class="mt-10 scroll-m-20 border-b pb-2 sm:text-base md:text-md lg:text-xl font-semibold tracking-tight transition-colors first:mt-0 gradient-text"
     >
       FAQ
     </h2>
