@@ -21,6 +21,9 @@ const router = createRouter({
       component: CompetitionView,
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
 })
 
 export default router
