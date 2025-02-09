@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="flex flex-col justify-start items-start gap-6 w-full mt-16">
+  <section class="flex flex-col justify-start items-start gap-6 w-full mt-0 md:mt-16">
     <!-- HEAD -->
     <div class="flex flex-col justify-start items-start w-full gap-2">
       <h2
@@ -31,7 +31,7 @@
           Total Hadiah Sitefest 2025
         </p>
         <h1
-          class="scroll-m-20 text-2xl font-extrabold tracking-tight md:text-3xl lg:text-5xl text-white"
+          class="scroll-m-20 text-3xl sm:text-4xl font-extrabold tracking-tight md:text-5xl lg:text-5xl text-white"
         >
           Rp 15.000.000+
         </h1>
@@ -49,11 +49,11 @@
         <img
           src="/src/assets/images/first-place.svg"
           alt="Place Reward Icon"
-          class="w-16 aspect-square"
+          class="w-12 md:w-16 aspect-square"
         />
         <div class="flex flex-col justify-start items-start gap-1">
           <h2
-            class="scroll-m-20 text-md text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
+            class="scroll-m-20 text-lg text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
           >
             Uang Pembinaan, Piala, Sertifikat
           </h2>
@@ -70,11 +70,11 @@
         <img
           src="/src/assets/images/second-place.svg"
           alt="Place Reward Icon"
-          class="w-16 aspect-square"
+          class="w-12 md:w-16 aspect-square"
         />
         <div class="flex flex-col justify-start items-start gap-1">
           <h2
-            class="scroll-m-20 text-md text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
+            class="scroll-m-20 text-lg text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
           >
             Uang Pembinaan, Piala, Sertifikat
           </h2>
@@ -91,11 +91,11 @@
         <img
           src="/src/assets/images/third-place.svg"
           alt="Place Reward Icon"
-          class="w-16 aspect-square"
+          class="w-12 md:w-16 aspect-square"
         />
         <div class="flex flex-col justify-start items-start gap-1">
           <h2
-            class="scroll-m-20 text-md text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
+            class="scroll-m-20 text-lg text-mainBlue font-extrabold tracking-tight md:text-lg lg:text-2xl"
           >
             Uang Pembinaan, Piala, Sertifikat
           </h2>

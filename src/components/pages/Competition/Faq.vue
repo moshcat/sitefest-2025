@@ -15,7 +15,6 @@ export default defineComponent({
     },
   },
   setup(props) {
-    // State untuk open/tutup tiap FAQ item
     const openStates = ref<boolean[]>(props.faqs.map(() => false))
 
     const toggleFAQ = (index: number) => {
@@ -28,11 +27,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="w-full flex flex-col justify-start items-start gap-6 mt-16">
+  <section class="w-full flex flex-col justify-start items-start gap-6 mt-0 md:mt-16">
     <!-- HEAD -->
     <div class="flex flex-col justify-start items-start w-full gap-2">
       <h2
-        class="mt-10 border-b pb-2 sm:text-base md:text-md lg:text-xl font-semibold gradient-text"
+        class="mt-4 md:mt-10 border-b pb-2 sm:text-base md:text-md lg:text-xl font-semibold gradient-text"
       >
         Pertanyaan Umum
       </h2>

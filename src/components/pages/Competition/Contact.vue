@@ -6,7 +6,7 @@ defineProps<ContactProps>()
 </script>
 
 <template>
-  <section class="w-full flex flex-col justify-start items-start gap-6 mt-16">
+  <section class="w-full flex flex-col justify-start items-start gap-6 mt-4 md:mt-16">
     <!-- HEAD -->
     <div class="flex flex-col justify-start items-start w-full gap-2">
       <h2
@@ -21,7 +21,7 @@ defineProps<ContactProps>()
       </h1>
     </div>
     <!-- BODY -->
-    <div class="flex flex-row justify-start items-stretch gap-4 w-full">
+    <div class="flex flex-col sm:flex-row justify-start items-stretch gap-4 w-full">
       <!-- ITEM CONTACT -->
       <div
         v-for="(contact, index) in contacts"

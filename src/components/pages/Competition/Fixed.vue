@@ -28,6 +28,7 @@ const fixedArea = ref<HTMLElement | null>(null)
 const fixedContainer = ref<HTMLElement | null>(null)
 const footer = ref<HTMLElement | null>(null)
 const topOffset = ref(0)
+const isMobile = ref(false)
 
 const findActivePeriod = () => {
   const now = new Date()
@@ -60,17 +61,32 @@ const updateCountdown = () => {
 
 const handleScroll = () => {
   if (fixedContainer.value && fixedArea.value) {
-    const fixedContainerRect = fixedContainer.value.getBoundingClientRect()
-    const fixedContainerArea = fixedArea.value.getBoundingClientRect()
-    const isOverlapping = scrollY + fixedContainerRect.height >= fixedContainerArea.height
+    if (isMobile.value) {
+      fixedContainer.value.style.transform = `translateY(0px)`
+    } else {
+      const fixedContainerRect = fixedContainer.value.getBoundingClientRect()
+      const fixedContainerArea = fixedArea.value.getBoundingClientRect()
+      const isOverlapping = scrollY + fixedContainerRect.height >= fixedContainerArea.height
 
-    isOverlapping
-      ? (fixedContainer.value.style.transform = `translateY(${fixedContainerArea.height - fixedContainerRect.height}px)`)
-      : (fixedContainer.value.style.transform = `translateY(${window.scrollY}px)`)
+      isOverlapping
+        ? (fixedContainer.value.style.transform = `translateY(${fixedContainerArea.height - fixedContainerRect.height}px)`)
+        : (fixedContainer.value.style.transform = `translateY(${window.scrollY}px)`)
+    }
   }
 }
 
+const handleResize = () => {
+  let width = window.innerWidth
+  if (width <= 1024) {
+    isMobile.value = true
+  } else {
+    isMobile.value = false
+  }
+  handleScroll()
+}
+
 onMounted(() => {
+  window.addEventListener('resize', handleResize)
   findActivePeriod()
   const interval = setInterval(updateCountdown, 1000)
   onUnmounted(() => clearInterval(interval))
@@ -87,26 +103,38 @@ const price = computed(() => activePeriod.value?.price || 'N/A')
 </script>
 
 <template>
-  <section ref="fixedArea" class="relative min-w-[456px] overflow-visible mt-24">
+  <section
+    ref="fixedArea"
+    class="fixed w-screen left-0 bottom-0 z-50 lg:relative lg:max-w-[456px] overflow-visible mt-24"
+  >
     <div
       ref="fixedContainer"
-      class="w-full bg-white rounded-xl px-5 py-6 flex flex-col justify-start items-start gap-4"
+      class="w-full bg-white rounded-xl rounded-bl-none rounded-br-none lg:rounded-br-xl lg:rounded-bl-xl px-5 py-6 flex flex-col justify-start items-start gap-4 shadow-md"
     >
       <!-- TITLE -->
-      <div class="flex flex-col w-full justify-start items-start gap-2">
+      <div class="flex flex-col w-full justify-start items-start gap-0 lg:gap-2 relative">
         <p
           class="leading-7 text-left gradient-text md:text-md lg:text-lg line-clamp-3 lg:max-w-screen-lg"
         >
           {{ category }}
         </p>
         <h2
-          class="scroll-m-20 text-xl text-mainBlue font-extrabold tracking-tight md:text-2xl lg:text-4xl"
+          class="scroll-m-20 text-2xl text-mainBlue font-extrabold tracking-tight md:text-3xl lg:text-4xl"
         >
           Gelombang {{ step }}
         </h2>
+        <div
+          class="flex lg:hidden flex-row justify-center items-center gap-3 px-4 py-2 rounded-full border border-[#F2F2F2] absolute right-0"
+        >
+          <img src="/src/assets/images/hourglass.svg" alt="Hour Glass Icon" class="w-4" />
+          <p class="leading-7 text-left opacity-90 text-sm md:text-base">
+            {{ countdown.days }}h : {{ countdown.hours }}j : {{ countdown.minutes }}m :
+            {{ countdown.seconds }}d
+          </p>
+        </div>
       </div>
       <!-- COUNTDOWN -->
-      <div class="flex flex-row justify-between items-center gap-3 w-full">
+      <div class="hidden lg:flex flex-row justify-between items-center gap-3 w-full">
         <!-- DAY COUNT -->
         <div
           class="py-4 flex flex-1 flex-col justify-center items-center gap-1 bg-[#F1F2F6] rounded-md"
@@ -161,7 +189,7 @@ const price = computed(() => activePeriod.value?.price || 'N/A')
         </div>
       </div>
       <!-- REQUIREMENT -->
-      <div class="flex flex-col justify-start items-start w-full gap-1">
+      <div class="hidden lg:flex flex-col justify-start items-start w-full gap-1">
         <p
           class="leading-7 text-left opacity-70 text-base md:text-md lg:text-lg line-clamp-3 lg:max-w-screen-lg"
         >
