@@ -13,7 +13,7 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-router.afterEach((to, from, next) => {
+router.afterEach(() => {
   setTimeout(() => (isLoading.value = false), 800)
 })
 </script>
