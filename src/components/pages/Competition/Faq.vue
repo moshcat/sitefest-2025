@@ -1,29 +1,16 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-import type { PropType } from 'vue'
-
+<script setup lang="ts">
 interface FAQItem {
-  question: string
-  answer: string
+  faqs: { question: string; answer: string }[]
 }
 
-export default defineComponent({
-  props: {
-    faqs: {
-      type: Array as PropType<FAQItem[]>,
-      required: true,
-    },
-  },
-  setup(props) {
-    const openStates = ref<boolean[]>(props.faqs.map(() => false))
-
-    const toggleFAQ = (index: number) => {
-      openStates.value[index] = !openStates.value[index]
-    }
-
-    return { openStates, toggleFAQ }
-  },
-})
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion'
+const defaultValue = 'item-1'
+defineProps<FAQItem>()
 </script>
 
 <template>
@@ -39,39 +26,16 @@ export default defineComponent({
     </div>
 
     <!-- BODY -->
-    <div class="flex flex-col justify-start items-start w-full gap-3">
-      <div
-        v-for="(faq, index) in faqs"
-        :key="index"
-        class="w-full bg-white rounded-lg shadow-md overflow-hidden"
-      >
-        <button
-          @click="toggleFAQ(index)"
-          class="w-full p-4 bg-white flex justify-between items-center"
-        >
-          <span class="text-lg font-medium text-gray-900">{{ faq.question }}</span>
-          <svg
-            :class="{ 'rotate-180': openStates[index] }"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="w-6 h-6 transition-transform duration-300"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M19 9l-7 7-7-7"
-            />
-          </svg>
-        </button>
-        <div v-if="openStates[index]" class="p-4 pt-0 text-gray-600 rounded-b-lg">
-          <div class="w-full h-[1px] bg-black opacity-10 mb-4"></div>
-          {{ faq.answer }}
-        </div>
-      </div>
-    </div>
+    <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
+      <AccordionItem v-for="(item, index) in faqs" :key="index" :value="item.answer">
+        <AccordionTrigger class="scroll-m-20 lg:text-xl tracking-tight text-sm md:text-lg">
+          {{ item.question }}
+        </AccordionTrigger>
+        <AccordionContent class="leading-7 [&:not(:first-child)]:mt-6">
+          {{ item.answer }}
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
   </section>
 </template>
 
