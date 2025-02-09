@@ -89,9 +89,11 @@ const toggleMobileMenu = () => {
     class="sticky top-0 z-50 bg-white bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50"
   >
     <nav class="flex justify-between items-center p-4 px-12 2xl:container">
-      <div class="flex items-center space-x-2" v-if="!isMobileOpen">
-        <img src="../../assets/logo.svg" class="h-7" alt="logo-sitefest" />
-      </div>
+      <RouterLink to="/">
+        <div class="flex items-center space-x-2" v-if="!isMobileOpen">
+          <img src="../../assets/logo.svg" class="h-7" alt="logo-sitefest" />
+        </div>
+      </RouterLink>
 
       <!--      mobile button-->
       <Button class="md:hidden" variant="default" @click="toggleMobileMenu" v-show="!isMobileOpen">
