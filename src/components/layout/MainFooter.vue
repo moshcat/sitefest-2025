@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { FacebookIcon, InstagramIcon, TwitterIcon, GithubIcon, YoutubeIcon } from 'lucide-vue-next'
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from 'lucide-vue-next'
 
 const currentYear = computed(() => new Date().getFullYear())
 
@@ -104,7 +104,6 @@ const data = {
               <a
                 v-if="section.title !== 'Kontak'"
                 :href="link.path.startsWith('#') ? undefined : link.path"
-                @click="scrollTo(link.path)"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-400 hover:text-white transition-colors"
