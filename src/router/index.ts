@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import CompetitionView from '../views/CompetitionView.vue'
 
 const router = createRouter({
@@ -21,7 +20,7 @@ const router = createRouter({
       component: CompetitionView,
     },
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return { top: 0 }
   },
 })
