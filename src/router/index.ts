@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import CompetitionView from '../views/CompetitionView.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,6 +15,11 @@ const router = createRouter({
       path: '/:pathMatch(.*)*',
       name: '404',
       component: () => import('@/components/pages/NotFound/NotFound.vue'),
+    },
+    {
+      path: '/competition',
+      name: 'comp',
+      component: CompetitionView,
     },
   ],
 })
