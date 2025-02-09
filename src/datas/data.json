@@ -10,10 +10,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 60.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-03T00:00:00+08:00",
         "step": 2,
         "price": "Rp 75.000,00"
       }
@@ -25,39 +29,35 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "17 Februari 2025"
+        "date": "17 Februari - 30 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret 2025"
-      },
-      {
-        "timeline_name": "Technical Meeting Penyisihan",
-        "date": "17 Februari 2025"
+        "date": "31 Maret - 3 Mei 2025"
       },
       {
         "timeline_name": "Pengumpulan Karya",
-        "date": "16 Februari - 17 Februari 2025"
+        "date": "3 Maret - 3 Mei 2025"
       },
       {
         "timeline_name": "Penyisihan Oleh Dewan Juri",
-        "date": "18 Februari - 19 Februari 2025"
+        "date": "4 Mei - 9 Mei 2025"
       },
       {
         "timeline_name": "Pengumuman Finalis",
-        "date": "17 Februari 2025"
+        "date": "10 Mei 2025"
       },
       {
         "timeline_name": "Technical Meeting Final",
-        "date": "17 Februari 2025"
+        "date": "11 Mei 2025"
       },
       {
         "timeline_name": "Grand Final",
-        "date": "17 Februari 2025"
+        "date": "16 Mei 2025"
       },
       {
         "timeline_name": "Awarding & Penutupan",
-        "date": "17 Februari 2025"
+        "date": "18 Mei 2025"
       }
     ],
     "FAQ": [
@@ -94,10 +94,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 100.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-10T00:00:00+08:00",
         "step": 2,
         "price": "Rp 120.000,00"
       }
@@ -166,10 +170,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 85.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-03T00:00:00+08:00",
         "step": 2,
         "price": "Rp 100.000,00"
       }
@@ -250,10 +258,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 100.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-10T00:00:00+08:00",
         "step": 2,
         "price": "Rp 120.000,00"
       }
@@ -322,10 +334,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 40.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-03T00:00:00+08:00",
         "step": 2,
         "price": "Rp 50.000,00"
       }
@@ -406,10 +422,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 80.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-03T00:00:00+08:00",
         "step": 2,
         "price": "Rp 100.000,00"
       }
@@ -490,10 +510,14 @@
     "guidebook_link": "",
     "period": [
       {
+        "startDate": "2025-02-01T00:00:00+08:00",
+        "endDate": "2025-03-30T00:00:00+08:00",
         "step": 1,
         "price": "Rp 25.000,00"
       },
       {
+        "startDate": "2025-02-31T00:00:00+08:00",
+        "endDate": "2025-05-09T00:00:00+08:00",
         "step": 2,
         "price": "Rp 35.000,00"
       }
