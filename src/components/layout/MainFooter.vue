@@ -10,6 +10,7 @@ const data = {
     sublink: [
       { name: 'Beranda', path: '/' },
       { name: 'Kompetisi', path: '/kompetisi' },
+      { name: 'Timeline', path: '#timeline' },
       { name: 'FAQ', path: '/faq' },
     ],
   },
@@ -28,9 +29,9 @@ const data = {
   kampus: {
     title: 'Kampus kami',
     sublink: [
-      { name: 'Penerimaan Mahasiswa Baru', path: '/' },
-      { name: 'Program Pendidikan', path: '/' },
-      { name: 'Tentang Primakara', path: '/' },
+      { name: 'Penerimaan Mahasiswa Baru', path: 'https://primakara.ac.id/penerimaan' },
+      { name: 'Program Pendidikan', path: 'https://primakara.ac.id/pendidikan' },
+      { name: 'Tentang Primakara', path: 'https://primakara.ac.id/' },
       // { name: 'info@primakara.ac.id', path: '/' },
       // { name: 'primakara.ac.id', path: '/' },
     ],
@@ -38,9 +39,9 @@ const data = {
   kontak: {
     title: 'Kontak',
     sublink: [
-      { name: 'info@sitefest.com' },
-      { name: '+62 8211 4707 8126' },
-      { name: 'Jl. Tukad Badung, Denpasar' },
+      { name: 'info@sitefest.com', path: '' },
+      { name: '+62 8211 4707 8126', path: '' },
+      { name: 'Jl. Tukad Badung, Denpasar', path: '' },
     ],
   },
 }
@@ -58,16 +59,36 @@ const data = {
 
         <!-- Social Links -->
         <div class="flex gap-6 mt-6">
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a
+            href="https://www.facebook.com/primakara/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
             <FacebookIcon class="h-5 w-5" />
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a
+            href="https://www.instagram.com/site_festival?igsh=NDk3eWUydDFzd2g3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
             <InstagramIcon class="h-5 w-5" />
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a
+            href="https://x.com/stmikprimakara"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
             <TwitterIcon class="h-5 w-5" />
           </a>
-          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+          <a
+            href="https://youtube.com/@primakaratv?si=RbJHdSGG8y9c-9hq"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-white transition-colors"
+          >
             <YoutubeIcon class="h-5 w-5" />
           </a>
         </div>
@@ -75,14 +96,22 @@ const data = {
 
       <!-- Navigation Grid -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-        <!-- Solutions -->
+        <!-- Footer Link -->
         <div v-for="(section, key) in data" :key="key">
           <h3 class="text-white font-medium mb-4">{{ section.title }}</h3>
           <ul class="space-y-3">
-            <li v-for="link in section.sublink" :key="link.path">
-              <router-link :to="link.path" class="text-gray-400 hover:text-white transition-colors">
+            <li v-for="(link, index) in section.sublink" :key="index">
+              <a
+                v-if="section.title !== 'Kontak'"
+                :href="link.path.startsWith('#') ? undefined : link.path"
+                @click="scrollTo(link.path)"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-gray-400 hover:text-white transition-colors"
+              >
                 {{ link.name }}
-              </router-link>
+              </a>
+              <span v-else class="text-gray-400">{{ link.name }}</span>
             </li>
           </ul>
         </div>
