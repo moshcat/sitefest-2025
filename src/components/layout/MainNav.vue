@@ -12,6 +12,7 @@ import {
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
 import { ref } from 'vue'
 import { X, ChevronsUpDown } from 'lucide-vue-next'
+import datas from '@/datas/data.json'
 
 const isOpen = ref(false)
 
@@ -41,42 +42,37 @@ const components: { title: string; path: string; description: string }[] = [
   {
     title: 'Web Desain Mahasiswa',
     path: '/competition/001',
-    description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
+    description: datas[0].description,
   },
   {
     title: 'UI/UX Desain Mahasiswa',
     path: '/competition/006',
-    description: 'For sighted users to preview content available behind a link.',
+    description: datas[5].description,
   },
   {
     title: 'Ide Bisnis',
     path: '/competition/003',
-    description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+    description: datas[2].description,
   },
   {
     title: 'UI Desain SMA/SMK',
     path: '/competition/005',
-    description: 'Visually or semantically separates content.',
+    description: datas[4].description,
   },
   {
     title: 'Cerdas Cermat IT',
     path: '/competition/004',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+    description: datas[3].description,
   },
   {
     title: 'Cerdas Cermat Akutansi',
     path: '/competition/002',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+    description: datas[1].description,
   },
   {
     title: 'Poster SMA/SMK',
     path: '/competition/007',
-    description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
+    description: datas[6].description,
   },
 ]
 
