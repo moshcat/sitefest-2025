@@ -27,7 +27,7 @@ defineProps<FAQItem>()
 
     <!-- BODY -->
     <Accordion type="single" class="w-full" collapsible :default-value="defaultValue">
-      <AccordionItem v-for="(item, index) in faqs" :key="index" :value="item.answer">
+      <AccordionItem v-for="(item, index) in faqs" :key="index" :value="item.question">
         <AccordionTrigger class="scroll-m-20 lg:text-xl tracking-tight text-sm md:text-lg">
           {{ item.question }}
         </AccordionTrigger>

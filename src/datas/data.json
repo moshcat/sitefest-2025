@@ -1,8 +1,8 @@
 [
   {
     "id": "001",
-    "title": "Website Design Competition",
-    "description": "Kompetisi Website Design Competition merupakan kompetisi yang ditujukan untuk siswa/i SMA/SMK Nasional yang berminat dalam pemrograman dan desain website. Mengusung tema DONATIONS TO THE COUNTRY, kompetisi ini mendorong peserta merancang solusi digital inovatif untuk penggalangan dana yang transparan, aman, dan efisien. Diharapkan lahir ide kreatif yang berdampak positif serta meningkatkan kesadaran berbagi di era digital.",
+    "title": "Lomba Desain Website",
+    "description": "Lomba Desain Website merupakan kompetisi yang ditujukan untuk siswa/i SMA/SMK Nasional yang berminat dalam pemrograman dan desain website. Mengusung tema DONATIONS TO THE COUNTRY, kompetisi ini mendorong peserta merancang solusi digital inovatif untuk penggalangan dana yang transparan, aman, dan efisien. Diharapkan lahir ide kreatif yang berdampak positif serta meningkatkan kesadaran berbagi di era digital.",
     "scale": "National",
     "type": "Online",
     "category": "Individual / Team",
@@ -85,8 +85,8 @@
   },
   {
     "id": "002",
-    "title": "Accounting Clash Competition",
-    "description": "Accounting Clash Competition 2025 merupakan kompetisi akuntansi tingkat SMA/SMK yang mengusung tema “Smart with Accounting” untuk mendorong siswa SMA/SMK memahami akuntansi secara cerdas sekaligus menemukan bakat tersembunyi mereka. Kompetisi ini diharapkan menjadi wadah pengembangan kemampuan akuntansi melalui tantangan yang kompetitif dan inovatif.",
+    "title": "Lomba Cerdas Cermat Akuntansi",
+    "description": "Lomba Cerdas Cermat Akuntansi merupakan kompetisi akuntansi tingkat SMA/SMK yang mengusung tema “Smart with Accounting” untuk mendorong siswa SMA/SMK memahami akuntansi secara cerdas sekaligus menemukan bakat tersembunyi mereka. Kompetisi ini diharapkan menjadi wadah pengembangan kemampuan akuntansi melalui tantangan yang kompetitif dan inovatif.",
     "scale": "Regional",
     "type": "Offline",
     "category": "Individual",
@@ -161,7 +161,7 @@
   },
   {
     "id": "003",
-    "title": "Business Plan Competition",
+    "title": "Lomba Ide Bisnis",
     "description": "Lomba Ide Bisnis SITEFEST 2025 oleh Primakara University memberikan platform bagi siswa SMA/SMK se-Indonesia untuk mengembangkan ide bisnis inovatif dan relevan dengan perkembangan zaman. Mengusung tema “Innovate to Elevate: Startups for a Better Future,” lomba ini mendorong peserta merancang startup yang berkontribusi positif bagi masa depan. Peserta diharapkan menyusun rencana bisnis yang komprehensif dengan solusi inovatif untuk kebutuhan masyarakat. Melalui ajang ini, Primakara University berkomitmen mendukung potensi kewirausahaan siswa dan menjadi katalisator lahirnya startup yang membawa perubahan positif di dunia bisnis.",
     "scale": "National",
     "type": "Hybrid",
@@ -325,8 +325,8 @@
   },
   {
     "id": "005",
-    "title": "UI Design Competition",
-    "description": "UI Design adalah kompetisi tingkat nasional dalam SITEFEST 2025 yang diadakan oleh Primakara University. Lomba ini ditujukan bagi siswa SMA/SMK se-Indonesia yang memiliki minat dalam desain antarmuka pengguna (UI) untuk desktop, dengan fokus pada desain website desktop. Peserta diharapkan menciptakan desain yang intuitif, efisien, dan menarik secara visual sesuai kebutuhan pengguna. Dengan tema “Beyond Pixels: Designing Human-Centered Digital Futures,” lomba ini memberikan pengalaman praktis dan peluang memperluas jaringan profesional di bidang UI desain.",
+    "title": "Lomba Desain UI",
+    "description": "Lomba Desain UI adalah kompetisi tingkat nasional dalam SITEFEST 2025 yang diadakan oleh Primakara University. Lomba ini ditujukan bagi siswa SMA/SMK se-Indonesia yang memiliki minat dalam desain antarmuka pengguna (UI) untuk desktop, dengan fokus pada desain website desktop. Peserta diharapkan menciptakan desain yang intuitif, efisien, dan menarik secara visual sesuai kebutuhan pengguna. Dengan tema “Beyond Pixels: Designing Human-Centered Digital Futures,” lomba ini memberikan pengalaman praktis dan peluang memperluas jaringan profesional di bidang UI desain.",
     "scale": "National",
     "type": "Hybrid",
     "category": "Individual",
@@ -413,8 +413,8 @@
   },
   {
     "id": "006",
-    "title": "⁠UI/UX Design Competition",
-    "description": "UI/UX Design adalah kompetisi nasional dalam SITEFEST 2025 yang diselenggarakan oleh Primakara University. Lomba ini ditujukan bagi mahasiswa perguruan tinggi se-Indonesia yang memiliki minat dalam desain antarmuka (UI) dan pengalaman pengguna (UX) untuk aplikasi mobile. Peserta diharapkan merancang solusi desain aplikasi mobile yang intuitif, efisien, dan menarik secara visual. Dengan tema “Simplifying Lives through Creative Digital Solutions” dan subtema Smart Education, Health & Wellness, serta Self-care, lomba ini memberikan pengalaman praktis serta peluang memperluas jaringan profesional di bidang UI/UX mobile.",
+    "title": "Lomba Desain UI/UX",
+    "description": "Lomba Desain UI/UX adalah kompetisi nasional dalam SITEFEST 2025 yang diselenggarakan oleh Primakara University. Lomba ini ditujukan bagi mahasiswa perguruan tinggi se-Indonesia yang memiliki minat dalam desain antarmuka (UI) dan pengalaman pengguna (UX) untuk aplikasi mobile. Peserta diharapkan merancang solusi desain aplikasi mobile yang intuitif, efisien, dan menarik secara visual. Dengan tema “Simplifying Lives through Creative Digital Solutions” dan subtema Smart Education, Health & Wellness, serta Self-care, lomba ini memberikan pengalaman praktis serta peluang memperluas jaringan profesional di bidang UI/UX mobile.",
     "scale": "National",
     "type": "Hybrid",
     "category": "Individual / Team",
@@ -502,7 +502,7 @@
   {
     "id": "007",
     "title": "⁠Lomba Poster",
-    "description": "Lomba Desain Poster tingkat SMA/SMK se-Indonesia merupakan bagian dari SITEFEST 2025 yang diselenggarakan oleh Primakara University dengan tema besar “Unleashing Hidden Talents into Wings of Innovation.” Kompetisi ini mengusung tema “Stop Bullying, Mulai Peduli, Ciptakan Harmoni,” yang menekankan pentingnya kesadaran dan aksi nyata untuk menghentikan bullying, meningkatkan rasa peduli, serta menciptakan lingkungan yang harmonis. Peserta diharapkan menghasilkan poster yang kreatif, menarik, dan mampu menyampaikan pesan kuat sesuai nilai tema.",
+    "description": "Lomba Poster tingkat SMA/SMK se-Indonesia merupakan bagian dari SITEFEST 2025 yang diselenggarakan oleh Primakara University dengan tema besar “Unleashing Hidden Talents into Wings of Innovation.” Kompetisi ini mengusung tema “Stop Bullying, Mulai Peduli, Ciptakan Harmoni,” yang menekankan pentingnya kesadaran dan aksi nyata untuk menghentikan bullying, meningkatkan rasa peduli, serta menciptakan lingkungan yang harmonis. Peserta diharapkan menghasilkan poster yang kreatif, menarik, dan mampu menyampaikan pesan kuat sesuai nilai tema.",
     "scale": "National",
     "type": "Online",
     "category": "Individual",
