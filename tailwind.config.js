@@ -1,4 +1,5 @@
 const animate = require('tailwindcss-animate')
+const typography = require('@tailwindcss/typography')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -60,6 +61,8 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        // RAPIIN DARI SINI MAS
+        mainBlue: '#032038',
       },
       borderRadius: {
         xl: 'calc(var(--radius) + 4px)',
@@ -91,7 +94,13 @@ module.exports = {
         'collapsible-down': 'collapsible-down 0.2s ease-in-out',
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
       },
+      backgroundImage: {
+        'text-gradient': 'linear-gradient(to right, #1DCAD3, #1B6EE9)',
+      },
+      backgroundColor: {
+        'sitefest-primary': '#F9F9F9',
+      },
     },
   },
-  plugins: [animate],
+  plugins: [animate, typography],
 }
