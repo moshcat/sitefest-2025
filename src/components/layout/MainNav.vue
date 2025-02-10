@@ -10,9 +10,10 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { X, ChevronsUpDown } from 'lucide-vue-next'
 import datas from '@/datas/data.json'
+import { useRouter } from 'vue-router'
 
 const isOpen = ref(false)
 
@@ -133,15 +134,16 @@ const toggleMobileMenu = () => {
                 <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   <li v-for="component in components" :key="component.title">
                     <NavigationMenuLink as-child>
-                      <a
-                        :href="component.path"
+                      <RouterLink
+                        :to="component.path"
+                        @click="isMobileOpen = false"
                         class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                       >
                         <div class="text-sm font-medium leading-none">{{ component.title }}</div>
                         <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
                           {{ component.description }}
                         </p>
-                      </a>
+                      </RouterLink>
                     </NavigationMenuLink>
                   </li>
                 </ul>
@@ -215,6 +217,7 @@ const toggleMobileMenu = () => {
             >
               <RouterLink
                 :to="component.path"
+                @click="isMobileOpen = false"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
               >
                 {{ component.title }}
