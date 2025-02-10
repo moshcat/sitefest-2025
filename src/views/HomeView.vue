@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue'
-import Hero from '@/components/pages/Home/Hero.vue'
+import HeroHome from '@/components/pages/Home/HeroHome.vue'
 import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
 import Tentang from '@/components/pages/Home/Tentang.vue'
 import TimelineHome from '@/components/pages/Home/TimelineHome.vue'
@@ -22,7 +22,11 @@ const FaqSection = defineAsyncComponent({
 <template>
   <main>
     <!--    hero section -->
-    <Hero />
+    <HeroHome
+      data-aos="fade-up"
+      data-aos-anchor-placement="center-center"
+      data-aos-duration="2000"
+    />
 
     <!--    video section-->
     <Suspense>
