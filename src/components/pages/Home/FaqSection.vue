@@ -77,7 +77,9 @@ const accordionItems = [
     >
       FAQ
     </h2>
-    <h1 class="mb-12 scroll-m-20 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+    <h1
+      class="mb-12 text-center scroll-m-20 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight"
+    >
       Pertanyaan yang Sering Diajukan
     </h1>
 
