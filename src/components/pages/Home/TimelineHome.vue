@@ -9,7 +9,7 @@ defineProps<TimelineProps>()
 <template>
   <section class="bg-primary">
     <div
-      class="container flex w-full flex-col justify-center md:flex-row pb-16 items-start gap-6 md:gap-10 px-12"
+      class="container flex w-full flex-col justify-center md:flex-row pb-16 items-start gap-6 md:gap-10 px-8 sm:px-12"
     >
       <!-- HEAD -->
       <div class="w-full flex flex-col justify-center items-start gap-8 my-16 md:mb-6">

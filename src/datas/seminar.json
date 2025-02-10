@@ -1,0 +1,63 @@
+{
+  "title": "Seminar Nasional Sitefest 2025",
+  "description": "Seminar nasional Sitefest 2025 mengusung tema 'Apa Kak Temanya' yang harus diikuti sekarang juga!",
+  "scale": "National",
+  "type": "Online",
+  "category": "Individual",
+  "registration_link": "",
+  "guidebook_link": "",
+  "period": [
+    {
+      "startDate": "2025-02-01T00:00:00+08:00",
+      "endDate": "2025-03-30T00:00:00+08:00",
+      "step": 1,
+      "price": "Rp 60.000,00"
+    },
+    {
+      "startDate": "2025-02-31T00:00:00+08:00",
+      "endDate": "2025-05-03T00:00:00+08:00",
+      "step": 2,
+      "price": "Rp 75.000,00"
+    }
+  ],
+  "requisite": [
+    "Siswa SMA/SMK sederajat aktif dari seluruh Indonesia",
+    "Memiliki kartu pelajar atau surat keterangan aktif bersekolah"
+  ],
+  "timeline": [
+    {
+      "timeline_name": "Penjualan Tiket Gelombang I",
+      "date": "17 Februari - 30 Maret 2025"
+    },
+    {
+      "timeline_name": "Penjualan Tiket Gelombang II",
+      "date": "31 Maret - 3 Mei 2025"
+    },
+    {
+      "timeline_name": "Seminar Nasional Sitefest 2025",
+      "date": "3 Maret 2025"
+    }
+  ],
+  "FAQ": [
+    {
+      "question": "Apakah beneran hadiahnya 10jt kak?",
+      "answer": "Ya"
+    },
+    {
+      "question": "Apakah beneran hadiahnya 15jt kak?",
+      "answer": "Ya"
+    }
+  ],
+  "Contact": [
+    {
+      "name": "Gunic",
+      "phone": "081234567890",
+      "line": "Gunic12"
+    },
+    {
+      "name": "Gunic",
+      "phone": "081234567890",
+      "line": "Gunic12"
+    }
+  ]
+}
