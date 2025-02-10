@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CompetitionView from '../views/CompetitionView.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,7 +18,7 @@ const router = createRouter({
     {
       path: '/competition/:id',
       name: 'comp',
-      component: CompetitionView,
+      component: () => import('../views/CompetitionView.vue'),
     },
   ],
   scrollBehavior() {
@@ -25,4 +26,8 @@ const router = createRouter({
   },
 })
 
+router.beforeEach((to, from, next) => {
+  AOS.init()
+  next()
+})
 export default router
