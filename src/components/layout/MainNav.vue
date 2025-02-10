@@ -9,7 +9,16 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
+import { Mail, Phone, Handshake } from 'lucide-vue-next'
 import { ref } from 'vue'
 import { X, ChevronsUpDown } from 'lucide-vue-next'
 import datas from '@/datas/data.json'
@@ -76,7 +85,6 @@ const components: { title: string; path: string; description: string }[] = [
 const isMobileOpen = ref<boolean | null>(null)
 const toggleMobileMenu = () => {
   isMobileOpen.value = !isMobileOpen.value
-  console.log(isMobileOpen.value)
 }
 </script>
 
@@ -155,7 +163,31 @@ const toggleMobileMenu = () => {
       </div>
 
       <div class="flex items-center space-x-4 hidden md:block">
-        <Button :variant="'default'" :size="'lg'">Kontak</Button>
+        <Dialog>
+          <DialogTrigger as-child>
+            <Button variant="default" class="w-full" size="lg">Kontak</Button>
+          </DialogTrigger>
+          <DialogContent class="max-w-[18rem] rounded-md md:max-w-[28rem]">
+            <DialogHeader>
+              <DialogTitle class="text-center">Kontak</DialogTitle>
+              <DialogDescription class="mb-4 text-center">
+                Berikut link yang dapat digunakan untuk menghubungi kami.
+              </DialogDescription>
+              <Button class="text-start">
+                <Mail />
+                Email
+              </Button>
+              <Button variant="default" class="text-start">
+                <Phone />
+                Whatsapp
+              </Button>
+              <Button>
+                <Handshake />
+                Jadi Sponsor Hebat Kami
+              </Button>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
 
       <!--      mobile menu -->
@@ -229,7 +261,31 @@ const toggleMobileMenu = () => {
           </Collapsible>
         </div>
         <div class="pt-4 pb-3 border-t border-gray-200">
-          <Button :variant="'default'" :size="'lg'" class="w-full">Kontak</Button>
+          <Dialog>
+            <DialogTrigger as-child>
+              <Button variant="default" class="w-full" size="lg"> Kontak</Button>
+            </DialogTrigger>
+            <DialogContent class="max-w-[18rem] sm:max-w-[20rem] rounded-md md:max-w-[24rem]">
+              <DialogHeader>
+                <DialogTitle class="text-center">Kontak</DialogTitle>
+                <DialogDescription class="mb-4 text-center">
+                  Berikut link yang dapat digunakan untuk menghubungi kami.
+                </DialogDescription>
+                <Button class="text-start">
+                  <Mail />
+                  Email
+                </Button>
+                <Button variant="default" class="text-start">
+                  <Phone />
+                  Whatsapp
+                </Button>
+                <Button>
+                  <Handshake />
+                  Jadi Sponsor Hebat Kami
+                </Button>
+              </DialogHeader>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </nav>
