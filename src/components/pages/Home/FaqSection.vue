@@ -77,13 +77,17 @@ const accordionItems = [
     >
       FAQ
     </h2>
-    <h1 class="mb-12 scroll-m-20 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">
+    <h1
+      class="mb-12 text-center scroll-m-20 text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight"
+    >
       Pertanyaan yang Sering Diajukan
     </h1>
 
     <Accordion type="single" class="w-full mb-32" collapsible :default-value="defaultValue">
       <AccordionItem v-for="item in accordionItems" :key="item.value" :value="item.value">
-        <AccordionTrigger class="scroll-m-20 lg:text-xl tracking-tight text-sm md:text-lg">
+        <AccordionTrigger
+          class="scroll-m-20 text-start lg:text-xl tracking-tight text-sm md:text-lg"
+        >
           {{ item.title }}
         </AccordionTrigger>
         <AccordionContent class="leading-7 [&:not(:first-child)]:mt-6">

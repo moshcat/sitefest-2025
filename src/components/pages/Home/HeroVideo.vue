@@ -3,7 +3,7 @@
 
 <template>
   <video
-    class="mb-16 rounded-xl overflow-hidden bg-gray-300 aspect-video max-w-sm md:max-w-2xl lg:max-w-[58rem] xl:max-w-6xl mx-auto flex items-center justify-center"
+    class="mb-16 rounded-xl overflow-hidden bg-gray-300 aspect-video max-w-[20rem] sm:max-w-[36rem] md:max-w-2xl lg:max-w-[58rem] xl:max-w-6xl mx-auto flex items-center justify-center"
     loop
     autoplay
     muted

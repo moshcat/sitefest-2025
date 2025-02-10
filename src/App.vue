@@ -24,7 +24,7 @@ router.afterEach(() => {
     <Transition name="fade">
       <PageLoader v-if="isLoading" />
     </Transition>
-    <RouterView />
+    <RouterView :key="$route.fullPath" />
     <MainFooter />
   </div>
 </template>
