@@ -105,7 +105,7 @@ const price = computed(() => activePeriod.value?.price || 'N/A')
 <template>
   <section
     ref="fixedArea"
-    class="fixed w-screen left-0 bottom-0 z-50 lg:relative lg:max-w-[456px] overflow-visible mt-24"
+    class="fixed w-screen left-0 bottom-0 z-30 lg:relative lg:max-w-[456px] overflow-visible mt-12 xl:mt-24"
   >
     <div
       ref="fixedContainer"
