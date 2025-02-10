@@ -5,6 +5,7 @@ import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
 import Tentang from '@/components/pages/Home/Tentang.vue'
 import TimelineHome from '@/components/pages/Home/TimelineHome.vue'
 import datas from '@/datas/timeline.json'
+import PrizepoolHome from '@/components/pages/Home/PrizepoolHome.vue'
 
 const HeroVideo = defineAsyncComponent({
   loader: () => import('@/components/pages/Home/HeroVideo.vue'),
@@ -38,6 +39,9 @@ const FaqSection = defineAsyncComponent({
     <Tentang />
     <!--    end tentang section -->
 
+    <!--    Prizepool -->
+    <PrizepoolHome />
+    <!--end prizepool-->
     <TimelineHome :timelines="datas" />
 
     <!--    faq section -->
