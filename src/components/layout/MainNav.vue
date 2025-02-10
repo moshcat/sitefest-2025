@@ -162,7 +162,7 @@ const toggleMobileMenu = () => {
         </NavigationMenu>
       </div>
 
-      <div class="flex items-center space-x-4 hidden md:block">
+      <div class="items-center space-x-4 hidden md:block">
         <Dialog>
           <DialogTrigger as-child>
             <Button variant="default" class="w-full" size="lg">Kontak</Button>
