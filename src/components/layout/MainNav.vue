@@ -29,6 +29,10 @@ const mainLink = {
     title: 'Seminar',
     path: '',
   },
+  workshop: {
+    title: 'Workshop',
+    path: '/',
+  },
 }
 const components: { title: string; path: string; description: string }[] = [
   {
@@ -114,30 +118,19 @@ const toggleMobileMenu = () => {
                 <RouterLink :to="mainLink.beranda.path"> {{ mainLink.beranda.title }}</RouterLink>
               </NavigationMenuLink>
             </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink :class="navigationMenuTriggerStyle()">
+                <RouterLink :to="mainLink.seminar.path"> {{ mainLink.seminar.title }}</RouterLink>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink :class="navigationMenuTriggerStyle()">
+                <RouterLink :to="mainLink.workshop.path"> {{ mainLink.workshop.title }}</RouterLink>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
 
             <NavigationMenuItem>
               <NavigationMenuTrigger>Kompetisi</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  <li v-for="component in components" :key="component.title">
-                    <NavigationMenuLink as-child>
-                      <RouterLink
-                        :to="component.path"
-                        @click="isMobileOpen = false"
-                        class="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <div class="text-sm font-medium leading-none">{{ component.title }}</div>
-                        <p class="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                          {{ component.description }}
-                        </p>
-                      </RouterLink>
-                    </NavigationMenuLink>
-                  </li>
-                </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Seminar</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul class="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   <li v-for="component in components" :key="component.title">
@@ -189,35 +182,20 @@ const toggleMobileMenu = () => {
           </RouterLink>
         </div>
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Collapsible v-model:open="isOpen" class="w-full space-y-2">
-            <div class="flex items-center justify-between">
-              <CollapsibleTrigger
-                class="block text-start w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900"
-                @click="isOpen === true"
-              >
-                {{ mainLink.kompetisi.title }}
-              </CollapsibleTrigger>
-              <CollapsibleTrigger as-child>
-                <Button variant="ghost" size="sm" class="w-9 p-0">
-                  <ChevronsUpDown class="h-4 w-4" />
-                  <span class="sr-only">Toggle</span>
-                </Button>
-              </CollapsibleTrigger>
-            </div>
-            <CollapsibleContent
-              class="space-y-2"
-              v-for="component in components"
-              :key="component.title"
-            >
-              <RouterLink
-                :to="component.path"
-                @click="isMobileOpen = false"
-                class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-              >
-                {{ component.title }}
-              </RouterLink>
-            </CollapsibleContent>
-          </Collapsible>
+          <RouterLink
+            :to="mainLink.seminar.path"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            {{ mainLink.seminar.title }}
+          </RouterLink>
+        </div>
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <RouterLink
+            :to="mainLink.workshop.path"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+          >
+            {{ mainLink.workshop.title }}
+          </RouterLink>
         </div>
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Collapsible v-model:open="isOpen" class="w-full space-y-2">
@@ -226,7 +204,7 @@ const toggleMobileMenu = () => {
                 class="block text-start w-full px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900"
                 @click="isOpen === true"
               >
-                {{ mainLink.seminar.title }}
+                {{ mainLink.kompetisi.title }}
               </CollapsibleTrigger>
               <CollapsibleTrigger as-child>
                 <Button variant="ghost" size="sm" class="w-9 p-0">
