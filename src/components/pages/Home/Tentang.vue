@@ -12,10 +12,10 @@ const content = {
 </script>
 
 <template>
-  <section class="container mx-auto px-6 py-12">
+  <section class="container mx-auto py-12">
     <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2 items-center">
       <!--      kiri text -->
-      <div class="pb-36 rounded-lg p-6 flex flex-col justify-center items-start gap-4">
+      <div class="pb-8 sm:pb-36 rounded-lg flex flex-col justify-center items-start gap-4">
         <h2
           class="mt-10 scroll-m-20 border-b pb-2 sm:text-base md:text-md lg:text-xl font-semibold tracking-tight transition-colors first:mt-0 gradient-text"
         >
@@ -31,7 +31,7 @@ const content = {
         <Button variant="default" class="my-6" size="lg">Daftar Sekarang</Button>
       </div>
       <!--      kanan image-->
-      <div class="rounded-lg p-6 flex justify-center items-center">
+      <div class="rounded-lg sm:p-6 flex justify-center items-center">
         <img src="@/assets/images/about-img.png" class="w-full object-cover" alt="" />
       </div>
     </div>
