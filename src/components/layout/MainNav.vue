@@ -10,10 +10,9 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { X, ChevronsUpDown } from 'lucide-vue-next'
 import datas from '@/datas/data.json'
-import { useRouter } from 'vue-router'
 
 const isOpen = ref(false)
 
