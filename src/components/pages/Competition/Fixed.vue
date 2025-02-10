@@ -109,7 +109,7 @@ const price = computed(() => activePeriod.value?.price || 'N/A')
   >
     <div
       ref="fixedContainer"
-      class="w-full bg-white rounded-xl rounded-bl-none rounded-br-none lg:rounded-br-xl lg:rounded-bl-xl px-5 py-6 flex flex-col justify-start items-start gap-4 shadow-md"
+      class="w-full bg-white rounded-xl rounded-bl-none rounded-br-none lg:rounded-br-xl lg:rounded-bl-xl px-4 sm:px-5 py-4 sm:py-6 flex flex-col justify-start items-start gap-4 shadow-md"
     >
       <!-- TITLE -->
       <div class="flex flex-col w-full justify-start items-start gap-0 lg:gap-2 relative">
@@ -124,10 +124,10 @@ const price = computed(() => activePeriod.value?.price || 'N/A')
           Gelombang {{ step }}
         </h2>
         <div
-          class="flex lg:hidden flex-row justify-center items-center gap-3 px-4 py-2 rounded-full border border-[#F2F2F2] absolute right-0"
+          class="flex lg:hidden flex-row justify-center items-center gap-2 sm:gap-3 px-0 sm:px-4 py-0 sm:py-2 rounded-full sm:border border-[#F2F2F2] absolute right-0"
         >
-          <img src="/src/assets/images/hourglass.svg" alt="Hour Glass Icon" class="w-4" />
-          <p class="leading-7 text-left opacity-90 text-sm md:text-base">
+          <img src="/src/assets/images/hourglass.svg" alt="Hour Glass Icon" class="w-3 sm:w-4" />
+          <p class="leading-7 text-left opacity-90 text-xs sm:text-sm md:text-base">
             {{ countdown.days }}h : {{ countdown.hours }}j : {{ countdown.minutes }}m :
             {{ countdown.seconds }}d
           </p>
