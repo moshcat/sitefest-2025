@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import CompetitionView from '../views/CompetitionView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,8 +15,18 @@ const router = createRouter({
     },
     {
       path: '/competition/:id',
-      name: 'comp',
-      component: CompetitionView,
+      name: 'competition',
+      component: () => import('../views/CompetitionView.vue'),
+    },
+    {
+      path: '/seminar',
+      name: 'seminar',
+      component: () => import('../views/SeminarView.vue'),
+    },
+    {
+      path: '/workshop',
+      name: 'workshop',
+      component: () => import('../views/WorkshopView.vue'),
     },
   ],
   scrollBehavior() {
