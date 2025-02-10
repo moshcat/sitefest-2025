@@ -17,13 +17,13 @@ const data = {
   kompetisi: {
     title: 'Kompetisi',
     sublink: [
-      { name: 'Web Design Mahasiswa', path: '/' },
-      { name: 'UI/UX Mahasiswa', path: '/' },
-      { name: 'Ide Bisnis', path: '/' },
-      { name: 'UI Desain SMA/SMK', path: '/' },
-      { name: 'Poster SMA/SMK', path: '/' },
-      { name: 'Cerdas Cermat Akutansi', path: '/' },
-      { name: 'Cerdas Cermat IT', path: '/' },
+      { name: 'Web Design Mahasiswa', path: '/competition/001' },
+      { name: 'UI/UX Mahasiswa', path: '/competition/006' },
+      { name: 'Ide Bisnis', path: '/competition/003' },
+      { name: 'UI Desain SMA/SMK', path: '/competition/005' },
+      { name: 'Poster SMA/SMK', path: '/competition/004' },
+      { name: 'Cerdas Cermat Akutansi', path: '/competition/002' },
+      { name: 'Cerdas Cermat IT', path: '/competition/007' },
     ],
   },
   kampus: {
@@ -104,7 +104,7 @@ const data = {
               <a
                 v-if="section.title !== 'Kontak'"
                 :href="link.path.startsWith('#') ? undefined : link.path"
-                target="_blank"
+                :target="section.title === 'Kompetisi' ? undefined : '_blank'"
                 rel="noopener noreferrer"
                 class="text-gray-400 hover:text-white transition-colors"
               >
