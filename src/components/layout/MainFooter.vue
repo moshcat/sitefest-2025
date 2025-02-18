@@ -17,13 +17,13 @@ const data = {
   kompetisi: {
     title: 'Kompetisi',
     sublink: [
-      { name: 'Web Design Mahasiswa', path: '/competition/001' },
-      { name: 'UI/UX Mahasiswa', path: '/competition/006' },
+      { name: 'Web Design Competition', path: '/competition/001' },
+      { name: 'UI/UX Design Competition', path: '/competition/006' },
       { name: 'Ide Bisnis', path: '/competition/003' },
-      { name: 'UI Desain SMA/SMK', path: '/competition/005' },
-      { name: 'Poster SMA/SMK', path: '/competition/004' },
-      { name: 'Cerdas Cermat Akutansi', path: '/competition/002' },
-      { name: 'Cerdas Cermat IT', path: '/competition/007' },
+      { name: 'UI Design Competition', path: '/competition/005' },
+      { name: 'Lomba Poster', path: '/competition/004' },
+      { name: 'Lomba Cerdas Cermat Akutansi', path: '/competition/002' },
+      { name: 'Lomba Cerdas Cermat IT', path: '/competition/007' },
     ],
   },
   kampus: {
