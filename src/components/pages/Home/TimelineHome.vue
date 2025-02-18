@@ -67,7 +67,7 @@ defineProps<TimelineProps>()
           <!-- BAR -->
           <div
             v-if="index !== timelines.length - 1"
-            class="w-2 md:w-4 h-full bg-gradient-to-r from-white to-[#1DCAD3] absolute top-0 left-4 md:left-4 -z-10"
+            class="w-2 h-full bg-gradient-to-r from-white to-[#1DCAD3] absolute top-0 left-4 md:left-5 -z-10"
           ></div>
         </div>
       </div>

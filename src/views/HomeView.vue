@@ -22,11 +22,7 @@ const FaqSection = defineAsyncComponent({
 <template>
   <main>
     <!--    hero section -->
-    <HeroHome
-      data-aos="fade-up"
-      data-aos-anchor-placement="center-center"
-      data-aos-duration="2000"
-    />
+    <HeroHome />
 
     <!--    video section-->
     <Suspense>
