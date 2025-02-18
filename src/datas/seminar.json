@@ -10,7 +10,7 @@
   "period": [
     {
       "startDate": "2025-02-01T00:00:00+08:00",
-      "endDate": "2025-03-30T00:00:00+08:00",
+      "endDate": "2025-05-17T00:00:00+08:00",
       "step": 1,
       "price": "Rp 60.000,00"
     },
@@ -28,15 +28,11 @@
   "timeline": [
     {
       "timeline_name": "Penjualan Tiket Gelombang I",
-      "date": "17 Februari - 30 Maret 2025"
-    },
-    {
-      "timeline_name": "Penjualan Tiket Gelombang II",
-      "date": "31 Maret - 3 Mei 2025"
+      "date": "24 Februari - 17 Mei 2025"
     },
     {
       "timeline_name": "Seminar Nasional Sitefest 2025",
-      "date": "3 Maret 2025"
+      "date": "18 Mei 2025"
     }
   ],
   "FAQ": [
