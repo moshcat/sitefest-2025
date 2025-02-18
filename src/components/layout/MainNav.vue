@@ -45,12 +45,12 @@ const mainLink = {
 }
 const components: { title: string; path: string; description: string }[] = [
   {
-    title: 'Web Desain Mahasiswa',
+    title: 'Web Design Competition',
     path: '/competition/001',
     description: datas[0].description,
   },
   {
-    title: 'UI/UX Desain Mahasiswa',
+    title: 'UI/UX Design Competition',
     path: '/competition/006',
     description: datas[5].description,
   },
@@ -60,22 +60,22 @@ const components: { title: string; path: string; description: string }[] = [
     description: datas[2].description,
   },
   {
-    title: 'UI Desain SMA/SMK',
+    title: 'UI Design Competition',
     path: '/competition/005',
     description: datas[4].description,
   },
   {
-    title: 'Cerdas Cermat IT',
+    title: 'Lomba Cerdas Cermat IT',
     path: '/competition/004',
     description: datas[3].description,
   },
   {
-    title: 'Cerdas Cermat Akutansi',
+    title: 'Lomba Cerdas Cermat Akutansi',
     path: '/competition/002',
     description: datas[1].description,
   },
   {
-    title: 'Poster SMA/SMK',
+    title: 'Lomba Poster',
     path: '/competition/007',
     description: datas[6].description,
   },
