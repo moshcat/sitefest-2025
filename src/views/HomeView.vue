@@ -2,8 +2,10 @@
 import { defineAsyncComponent } from 'vue'
 import HeroHome from '@/components/pages/Home/HeroHome.vue'
 import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
+import Marquee from '@/components/pages/Home/Marquee.vue'
 import Tentang from '@/components/pages/Home/Tentang.vue'
 import TimelineHome from '@/components/pages/Home/TimelineHome.vue'
+import Gallery from '@/components/pages/Home/Gallery.vue'
 import datas from '@/datas/timeline.json'
 import PrizepoolHome from '@/components/pages/Home/PrizepoolHome.vue'
 
@@ -35,6 +37,10 @@ const FaqSection = defineAsyncComponent({
     </Suspense>
     <!--    end video section -->
 
+    <!-- Marquee -->
+    <Marquee />
+    <!-- End Marquee -->
+
     <!--    tentang section -->
     <Tentang />
     <!--    end tentang section -->
@@ -43,6 +49,10 @@ const FaqSection = defineAsyncComponent({
     <PrizepoolHome />
     <!--end prizepool-->
     <TimelineHome :timelines="datas" />
+
+    <!-- START GALLERY -->
+    <Gallery />
+    <!-- END GALLERY -->
 
     <!--    faq section -->
     <Suspense>
