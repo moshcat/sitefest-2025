@@ -5,7 +5,7 @@ import VideoLoader from '@/components/ui/loader/VideoLoader.vue'
 import Marquee from '@/components/pages/Home/Marquee.vue'
 import Tentang from '@/components/pages/Home/Tentang.vue'
 import TimelineHome from '@/components/pages/Home/TimelineHome.vue'
-import Gallery from '@/components/pages/Home/Gallery.vue'
+import GalleryHome from '@/components/pages/Home/GalleryHome.vue'
 import datas from '@/datas/timeline.json'
 import PrizepoolHome from '@/components/pages/Home/PrizepoolHome.vue'
 
@@ -51,7 +51,7 @@ const FaqSection = defineAsyncComponent({
     <TimelineHome :timelines="datas" />
 
     <!-- START GALLERY -->
-    <Gallery />
+    <GalleryHome />
     <!-- END GALLERY -->
 
     <!--    faq section -->

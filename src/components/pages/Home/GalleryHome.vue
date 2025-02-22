@@ -1,15 +1,15 @@
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted } from 'vue'
 
 const sponsors = ref([])
-const mainImage = ref('/src/assets/images/gallery-1.JPG')
+const mainImage = ref('/images/gallery-1.JPG')
 
 onMounted(async () => {
   const response = await fetch('/src/datas/sponsor.json')
   sponsors.value = await response.json()
 })
 
-const changeMainImage = (imagePath) => {
+const changeMainImage = (imagePath: string) => {
   mainImage.value = imagePath
 }
 </script>
@@ -50,10 +50,10 @@ const changeMainImage = (imagePath) => {
                 v-for="index in 5"
                 :key="index"
                 class="w-full aspect-video rounded-md bg-slate-100 cursor-pointer overflow-hidden relative"
-                @click="changeMainImage(`/src/assets/images/gallery-${index}.JPG`)"
+                @click="changeMainImage(`/images/gallery-${index}.JPG`)"
               >
                 <img
-                  :src="`/src/assets/images/gallery-${index}.JPG`"
+                  :src="`/images/gallery-${index}.JPG`"
                   alt="gallery image"
                   class="min-w-32 sm:min-w-48 md:min-w-0"
                 />
@@ -69,10 +69,10 @@ const changeMainImage = (imagePath) => {
                 v-for="index in [6, 7, 8, 9, 10]"
                 :key="index"
                 class="w-full aspect-video rounded-md bg-slate-100 cursor-pointer overflow-hidden relative"
-                @click="changeMainImage(`/src/assets/images/gallery-${index}.JPG`)"
+                @click="changeMainImage(`/images/gallery-${index}.JPG`)"
               >
                 <img
-                  :src="`/src/assets/images/gallery-${index}.JPG`"
+                  :src="`/images/gallery-${index}.JPG`"
                   alt="gallery image"
                   class="min-w-32 sm:min-w-48 md:min-w-0"
                 />
