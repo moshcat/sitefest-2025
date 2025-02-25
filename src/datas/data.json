@@ -4,20 +4,22 @@
     "title": "Web Design Competition",
     "description": "Web Design Competition merupakan kompetisi yang ditujukan untuk siswa/i SMA/SMK Nasional yang berminat dalam pemrograman dan desain website. Mengusung tema DONATIONS TO THE COUNTRY, kompetisi ini mendorong peserta merancang solusi digital inovatif untuk penggalangan dana yang transparan, aman, dan efisien. Diharapkan lahir ide kreatif yang berdampak positif serta meningkatkan kesadaran berbagi di era digital.",
     "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "WEB_DESIGN.svg",
     "type": "Online",
     "category": "Individual / Team",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranWebDesignCompetition",
+    "guidebook_link": "https://xdlink.id/GuideBookWebDesign",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 75.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 85.000,00"
       }
@@ -29,35 +31,35 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Pengumpulan Karya",
-        "date": "28 April - 3 Mei 2025"
+        "date": "14 April - 20 April 2025"
       },
       {
         "timeline_name": "Penyisihan Oleh Dewan Juri",
-        "date": "4 Mei - 9 Mei 2025"
+        "date": "21 April - 30 April 2025"
       },
       {
         "timeline_name": "Pengumuman Finalis",
-        "date": "13 Mei 2025"
+        "date": "04 Mei 2025"
       },
       {
         "timeline_name": "Grand Final",
-        "date": "16 Mei 2025"
+        "date": "08 Mei 2025"
       },
       {
         "timeline_name": "Awarding & Penutupan",
-        "date": "18 Mei 2025"
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -85,23 +87,25 @@
   },
   {
     "id": "002",
-    "title": "Lomba Cerdas Cermat Akuntansi",
-    "description": "Lomba Cerdas Cermat Akuntansi merupakan kompetisi akuntansi tingkat SMA/SMK yang mengusung tema “Smart with Accounting” untuk mendorong siswa SMA/SMK memahami akuntansi secara cerdas sekaligus menemukan bakat tersembunyi mereka. Kompetisi ini diharapkan menjadi wadah pengembangan kemampuan akuntansi melalui tantangan yang kompetitif dan inovatif.",
-    "scale": "Regional",
+    "title": "Cerdas Cermat Akuntansi",
+    "description": "Cerdas Cermat Akuntansi merupakan kompetisi akuntansi tingkat SMA/SMK yang mengusung tema “Smart with Accounting” untuk mendorong siswa SMA/SMK memahami akuntansi secara cerdas sekaligus menemukan bakat tersembunyi mereka. Kompetisi ini diharapkan menjadi wadah pengembangan kemampuan akuntansi melalui tantangan yang kompetitif dan inovatif.",
+    "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "ECONOMIC_QUIZ.svg",
     "type": "Offline",
     "category": "Individual",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranLombaCerdasCermatAkuntansi",
+    "guidebook_link": "https://xdlink.id/GuideBookCCAkutansi",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 100.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 120.000,00"
       }
@@ -113,27 +117,27 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Babak Penyisihan & Semifinal",
-        "date": "15 Mei 2025"
+        "date": "8 Mei 2025"
       },
       {
         "timeline_name": "Babak Final",
-        "date": "18 Mei 2025"
+        "date": "11 Mei 2025"
       },
       {
         "timeline_name": "Awarding & Penutupan",
-        "date": "18 Mei 2025"
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -164,20 +168,22 @@
     "title": "Lomba Ide Bisnis",
     "description": "Lomba Ide Bisnis SITEFEST 2025 oleh Primakara University memberikan platform bagi siswa SMA/SMK se-Indonesia untuk mengembangkan ide bisnis inovatif dan relevan dengan perkembangan zaman. Mengusung tema “Innovate to Elevate: Startups for a Better Future,” lomba ini mendorong peserta merancang startup yang berkontribusi positif bagi masa depan. Peserta diharapkan menyusun rencana bisnis yang komprehensif dengan solusi inovatif untuk kebutuhan masyarakat. Melalui ajang ini, Primakara University berkomitmen mendukung potensi kewirausahaan siswa dan menjadi katalisator lahirnya startup yang membawa perubahan positif di dunia bisnis.",
     "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "IDEA_BUSINESS.svg",
     "type": "Hybrid",
     "category": "Individual / Team",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranLombaIdeBisnis",
+    "guidebook_link": "https://xdlink.id/GuideBookIdeBisnis",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 85.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 100.000,00"
       }
@@ -189,35 +195,35 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Pengumpulan Proposal",
-        "date": "28 April - 3 Mei 2025"
+        "date": "14 April - 20 April 2025"
       },
       {
         "timeline_name": "Penilaian oleh Dewan Juri",
-        "date": "4 Mei - 9 Mei 2025"
+        "date": "21 April - 30 April 2025"
       },
       {
         "timeline_name": "Pengumuman Finalis",
-        "date": "13 Mei 2025"
+        "date": "04 Mei 2025"
       },
       {
-        "timeline_name": "Grand Final (Offline)",
-        "date": "15 Mei 2025"
+        "timeline_name": "Grand Final",
+        "date": "08 Mei 2025"
       },
       {
-        "timeline_name": "Awarding & Penutupan (Offline)",
-        "date": "18 Mei 2025"
+        "timeline_name": "Awarding & Penutupan",
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -245,23 +251,25 @@
   },
   {
     "id": "004",
-    "title": "Lomba Cerdas Cermat IT",
-    "description": "Lomba Cerdas Cermat (LCC) TI SItefest 2025 adalah kompetisi tingkat SMA/SMK sederajat yang bertujuan untuk menguji pengetahuan dan keterampilan siswa di bidang teknologi informasi.",
-    "scale": "Regional",
+    "title": "Cerdas Cermat IT",
+    "description": "Cerdas Cermat (LCC) TI SItefest 2025 adalah kompetisi tingkat SMA/SMK sederajat yang bertujuan untuk menguji pengetahuan dan keterampilan siswa di bidang teknologi informasi.",
+    "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "IT_QUIZ.svg",
     "type": "Offline",
     "category": "Team",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranLombaCerdasCermatIT",
+    "guidebook_link": "https://xdlink.id/GuideBookCCIT",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 115.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 125.000,00"
       }
@@ -273,23 +281,23 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
-        "timeline_name": "Mathc Day (Offline)",
-        "date": "16 Mei - 17 Mei 2025"
+        "timeline_name": "Mathc Day",
+        "date": "9 Mei - 10 Mei 2025"
       },
       {
-        "timeline_name": "Awarding & Penutupan (Offline)",
-        "date": "18 Mei 2025"
+        "timeline_name": "Awarding & Penutupan",
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -320,20 +328,22 @@
     "title": "UI Design Competition",
     "description": "UI Design Competition adalah kompetisi tingkat nasional dalam SITEFEST 2025 yang diadakan oleh Primakara University. Lomba ini ditujukan bagi siswa SMA/SMK se-Indonesia yang memiliki minat dalam desain antarmuka pengguna (UI) untuk desktop, dengan fokus pada desain website desktop. Peserta diharapkan menciptakan desain yang intuitif, efisien, dan menarik secara visual sesuai kebutuhan pengguna. Dengan tema “Beyond Pixels: Designing Human-Centered Digital Futures,” lomba ini memberikan pengalaman praktis dan peluang memperluas jaringan profesional di bidang UI desain.",
     "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "UI_CHAL.svg",
     "type": "Hybrid",
     "category": "Individual",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranUIDesignCompetition",
+    "guidebook_link": "https://xdlink.id/GuideBookUIDesign",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 40.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 50.000,00"
       }
@@ -345,39 +355,35 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Pengumpulan Proposal",
-        "date": "28 April - 3 Mei 2025"
+        "date": "14 April - 20 Mei 2025"
       },
       {
         "timeline_name": "Penilaian oleh Dewan Juri",
-        "date": "4 Mei - 9 Mei 2025"
-      },
-      {
-        "timeline_name": "Pemberian Informasi",
-        "date": "2 Maret & 6 April 2025"
+        "date": "21 April - 30 April 2025"
       },
       {
         "timeline_name": "Pengumuman Finalis",
-        "date": "13 Mei 2025"
+        "date": "04 Mei 2025"
       },
       {
         "timeline_name": "Grand Final",
-        "date": "17 Mei 2025"
+        "date": "09 Mei 2025"
       },
       {
-        "timeline_name": "Awarding & Penutupan (Offline)",
-        "date": "18 Mei 2025"
+        "timeline_name": "Awarding & Penutupan",
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -408,14 +414,16 @@
     "title": "UI/UX Design Competition",
     "description": "UI/UX Design Competition adalah kompetisi nasional dalam SITEFEST 2025 yang diselenggarakan oleh Primakara University. Lomba ini ditujukan bagi mahasiswa perguruan tinggi se-Indonesia yang memiliki minat dalam desain antarmuka (UI) dan pengalaman pengguna (UX) untuk aplikasi mobile. Peserta diharapkan merancang solusi desain aplikasi mobile yang intuitif, efisien, dan menarik secara visual. Dengan tema “Simplifying Lives through Creative Digital Solutions” dan subtema Smart Education, Health & Wellness, serta Self-care, lomba ini memberikan pengalaman praktis serta peluang memperluas jaringan profesional di bidang UI/UX mobile.",
     "scale": "National",
+    "grade": "Mahasiswa",
+    "img": "UX_CHAL.svg",
     "type": "Hybrid",
     "category": "Individual / Team",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftaranUIUXDesignCompetition",
+    "guidebook_link": "https://xdlink.id/GuideBookUIUXDesign",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 85.000,00"
       },
@@ -433,35 +441,35 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Pengumpulan Proposal",
-        "date": "28 April - 3 Mei 2025"
+        "date": "14 April - 20 April 2025"
       },
       {
         "timeline_name": "Penilaian oleh Dewan Juri",
-        "date": "4 Mei - 9 Mei 2025"
+        "date": "21 April - 30 April 2025"
       },
       {
         "timeline_name": "Pengumuman Finalis",
-        "date": "13 Mei 2025"
+        "date": "04 Mei 2025"
       },
       {
-        "timeline_name": "Grand Final (Offline)",
-        "date": "17 Mei 2025"
+        "timeline_name": "Grand Final",
+        "date": "10 Mei 2025"
       },
       {
-        "timeline_name": "Awarding & Penutupan (Offline)",
-        "date": "18 Mei 2025"
+        "timeline_name": "Awarding & Penutupan",
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
@@ -492,20 +500,22 @@
     "title": "⁠Lomba Poster",
     "description": "Lomba Poster tingkat SMA/SMK se-Indonesia merupakan bagian dari SITEFEST 2025 yang diselenggarakan oleh Primakara University dengan tema besar “Unleashing Hidden Talents into Wings of Innovation.” Kompetisi ini mengusung tema “Stop Bullying, Mulai Peduli, Ciptakan Harmoni,” yang menekankan pentingnya kesadaran dan aksi nyata untuk menghentikan bullying, meningkatkan rasa peduli, serta menciptakan lingkungan yang harmonis. Peserta diharapkan menghasilkan poster yang kreatif, menarik, dan mampu menyampaikan pesan kuat sesuai nilai tema.",
     "scale": "National",
+    "grade": "SMA/SMK",
+    "img": "POSTER_CHAL.svg",
     "type": "Online",
     "category": "Individual",
-    "registration_link": "",
-    "guidebook_link": "",
+    "registration_link": "https://xdlink.id/PendaftranLombaPoster",
+    "guidebook_link": "https://xdlink.id/GuideBookPoster",
     "period": [
       {
         "startDate": "2025-02-01T00:00:00+08:00",
-        "endDate": "2025-03-30T00:00:00+08:00",
+        "endDate": "2025-03-31T00:00:00+08:00",
         "step": 1,
         "price": "Rp 25.000,00"
       },
       {
         "startDate": "2025-03-31T00:00:00+08:00",
-        "endDate": "2025-04-26T00:00:00+08:00",
+        "endDate": "2025-04-12T00:00:00+08:00",
         "step": 2,
         "price": "Rp 35.000,00"
       }
@@ -517,31 +527,31 @@
     "timeline": [
       {
         "timeline_name": "Pendaftaran Gelombang I",
-        "date": "24 Februari - 30 Maret 2025"
+        "date": "26 Februari - 31 Maret 2025"
       },
       {
         "timeline_name": "Pendaftaran Gelombang II",
-        "date": "31 Maret - 26 April 2025"
+        "date": "1 April - 12 April 2025"
       },
       {
         "timeline_name": "Technical Meeting",
-        "date": "27 April 2025"
+        "date": "13 April 2025"
       },
       {
         "timeline_name": "Pengumpulan Karya",
-        "date": "28 April - 9 Mei 2025"
+        "date": "14 April - 03 Mei 2025"
       },
       {
         "timeline_name": "Penilaian oleh Dewan Juri",
-        "date": "10 Mei - 16 Mei 2025"
+        "date": "04 Mei - 09 Mei 2025"
       },
       {
-        "timeline_name": "Pengumuman Final",
-        "date": "17 Mei 2025"
+        "timeline_name": "Pengumuman Pemenang",
+        "date": "10 Mei 2025"
       },
       {
-        "timeline_name": "Awarding & Penutupan (Offline)",
-        "date": "18 Mei 2025"
+        "timeline_name": "Awarding & Penutupan",
+        "date": "11 Mei 2025"
       }
     ],
     "FAQ": [
