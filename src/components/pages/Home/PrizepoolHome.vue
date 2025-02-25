@@ -38,7 +38,7 @@
           <h1
             class="scroll-m-20 text-3xl sm:text-4xl font-extrabold tracking-tight md:text-5xl lg:text-5xl text-white"
           >
-            Rp 75.000.000+
+            Rp 107.000.000+
           </h1>
         </div>
         <!-- PLANET -->

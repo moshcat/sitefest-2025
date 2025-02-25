@@ -24,9 +24,10 @@ import { Button } from '@/components/ui/button'
         SITE<span class="text-secondary">FEST</span> 2025
       </h1>
       <p class="leading-7 text-center md:text-md lg:text-lg line-clamp-3 lg:max-w-screen-lg">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-        galley of type and scrambled it to make a type specimen book.
+        Selamat datang di Sitefest 2025, ajang kompetisi tingkat nasional yang diselenggarakan oleh
+        Primakara University. Tunjukkan kreativitas dan keahlianmu di dunia teknologi sekarang juga!
+        Bersaing dengan talenta terbaik dari seluruh Indonesia, mulai dari siswa SMA/SMK hingga
+        mahasiswa. Saatnya wujudkan ide dan inovasimu di panggung Extra Ordinary!
       </p>
       <Button variant="default" size="lg" class="mt-6">Jelajahi</Button>
     </div>
