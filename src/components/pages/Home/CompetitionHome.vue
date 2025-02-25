@@ -49,7 +49,7 @@ onMounted(async () => {
       >
         <!-- IMAGE -->
         <div class="w-full flex justify-center items-center overflow-hidden">
-          <img v-bind:src="'/src/assets/images/' + data.img" alt="" />
+          <img v-bind:src="'/images/' + data.img" alt="" />
         </div>
         <!-- BODY -->
         <div
